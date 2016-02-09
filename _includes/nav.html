@@ -1,0 +1,25 @@
+<nav>
+	{% if page.pageclass == 'home' %}			
+	<a href="/" class="selected">Home</a>
+	{% else %}
+	<a href="/">Home</a>
+	{% endif %}
+	
+	{% if page.pageclass == 'about' %}			
+	<a href="/aboutus" class="selected">About</a>
+	{% else %}
+	<a href="/aboutus">About</a>
+	{% endif %}
+	
+	{% if page.pageclass == 'faq' %}			
+	<a href="/faq" class="selected">FAQ</a>
+	{% else %}
+	<a href="/faq">FAQ</a>
+	{% endif %}
+	
+	{% if page.pageclass == 'portfolio' %}			
+	<a href="/portfolio" class="selected">Portfolio</a>
+	{% else %}
+	<a href="/portfolio">Portfolio</a>
+	{% endif %}
+</nav>

@@ -15,8 +15,11 @@ body {
 	background: #fff;
 }
 
+
+
+/* @group Basics */
 h1 {
-	font: 900 36px/48px Georgia, "Times New Roman", Times, serif;
+	font: 900 36px/48px Bitter, Georgia, "Times New Roman", Times, serif;
 	color: #d64336;
 	color: ;
 }
@@ -50,6 +53,10 @@ a {
 a:hover {
 	color: #b23636;
 }
+
+/* @end */
+
+/* @group Buttons */
 .button {
 	display: inline-block;
 	position: relative;
@@ -57,20 +64,23 @@ a:hover {
 	width: ;
 	margin:0;
 	padding: 12px 36px;
-	border: 2px solid rgba(255,255,255,.75);
+	/*border: 2px solid rgba(255,255,255,.75);*/
 	/*border-color: #d64336;*/
+	background: #b81414;
 	border-radius: 2px;	
 	font: 100 14px/24px Georgia, "Times New Roman", Times, serif;
 	letter-spacing: 2px;
 	cursor: pointer;
 	text-transform: uppercase;
 	text-decoration: none;	
-	color: rgba(255,255,255,.75);
+	color: #fff;
+	outline: none;
+	border: none;
 	/*color: #d64336;*/
 }
 .button:hover {
 	color: #fff;
-	border-color: #fff;
+	background: #8a0f0f;
 }
 .button.dark {
 	border-color: #000;
@@ -104,23 +114,21 @@ a:hover {
 	        animation: buttonpulse 1.5s ease-out infinite;
 }
 
-
-	
-
+/* @end */
 
 /* @group HEADER */
 body > header {
-	position: fixed;
+	position: absolute;
 	z-index: 100000;
 	width: 100%;
-	height: 60px;
+	height: 72px;
 	padding: 12px;
 	text-align: center;
-	background: rgba(0,0,0,.5);
+	/*background: rgba(0,0,0,.5);*/
 }
 body > header > div {
 	position: relative;
-	max-width: 800px;
+	max-width: 1080px;
 	margin: 0 auto;
 }
 body > header > div > a {
@@ -135,7 +143,7 @@ body > header > div > a:hover {
 	color: #fff;
 }
 body > header > div > a > img {
-	height: 36px;
+	height: 48px;
 	vertical-align: middle;
 }
 body > header > div > a > span {
@@ -153,7 +161,7 @@ body > header > div > nav > p  {
 }
 body > header > div > nav > a {
 	position: relative;
-	font: 200 18px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 200 18px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	text-decoration: none;
 	color: #fff;
 	margin: 0 0 0 18px;
@@ -161,31 +169,14 @@ body > header > div > nav > a {
 body > header > div > nav > a:hover {
 	color:#d64336;
 }
+body > header > div > nav > a.selected {
+	border-bottom: 3px solid #b81515;
+}
 /* @end */
 
 
-/* @group CONTENT */
-.content {
-	position: relative;
-	height: 100%;
-	/*overflow: scroll;*/
-}
-.content > div {
-	/*height: 100%;*/
-	min-height: 100%;
-	/*max-width: 720px;*/
-	margin: 0 auto;
-	padding: 0;
-	overflow: hidden;
-}
-.content section {
-	max-width: 720px;
-	margin: 0 auto;	
-	padding: 48px 0;
-}
 
 
-/* @end */
 
 
 /* @group BANNER */
@@ -194,10 +185,11 @@ body > header > div > nav > a:hover {
 	height: 100%;
 	/*max-height: 720px;*/
 	min-height: 320px;
-	background: radial-gradient(ellipse farthest-corner, #333 12%, black 100%) #000;
+	/*background: radial-gradient(ellipse farthest-corner, #333 12%, black 100%) #000;*/
+	background: #221e1e;
+	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: center;
 	color: #fff;
 	text-align: center;
 	white-space: nowrap;
@@ -209,6 +201,15 @@ body > header > div > nav > a:hover {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+/*.banner.brick-boundry {
+	background-image: url('/images/patterns/brick.png');
+	background-attachment: scroll;
+	background-repeat: repeat no-repeat;
+	background-size: auto;
+	background-position: bottom center;
+}*/
+
+
 .banner > img {
 	position: absolute;
 	height: 100%;
@@ -260,7 +261,7 @@ body > header > div > nav > a:hover {
 }
 .banner > hgroup > h1 {
 	margin: 0px 0 0 0;
-	font:100 30px/36px Georgia, "Times New Roman", Times, serif;
+	font: 100 36px/60px Bitter, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: 3px;
 	/*text-shadow: 0 1px 6px rgba(0,0,0,.5);*/
 	text-transform: uppercase;
@@ -283,346 +284,71 @@ body > header > div > nav > a:hover {
 /* @end */
 
 
-
-
-
-
-/* @group Process */
-.process {
+/* @group CONTENT */
+.content {
 	position: relative;
+	height: 100%;
+	/*overflow: scroll;*/
+}
+.content > div {
+	/*height: 100%;*/
+	min-height: 100%;
+	/*max-width: 720px;*/
 	margin: 0 auto;
-	padding: 60px 0;
-	text-align: center;
-	background: #d64336;
-	white-space: nowrap;
+	padding: 0;
+	overflow: hidden;
 }
-.process:after {
-	content: '\00a0';
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	top: 100%;
-	left: 50%;
-	margin: -25px 0 0 -25px;
-	background: #d64336;
-	transform: rotate(45deg);
+.content section {
+	max-width: 1080px;
+	margin: 0 auto;	
+	padding: 48px 0;
 }
-.process > div {
-	display: inline-block;
-	width: 33%;
-	max-width: 240px;
-	text-align: center;
-	vertical-align: top;
-}
-.process > div > img {
-	display: block;
-	width: 100%;
-	max-width: 120px;
-	margin: 0 auto;
-}
-.process > div > h5 {
-	font: 500 16px/24px Georgia, "Times New Roman", Times, serif;
-	color: #fff;
-	white-space: normal;
-}
+
+
 /* @end */
 
 
 
-/* @group Measure */
-.content section.measure {
-	margin: 96px auto;
-	/*border: 2px solid #000;*/
+
+/* @group Services */
+.services {
+	padding: 96px 0;
 	background: #fff;
 	text-align: center;
-	white-space: nowrap;
+	overflow: hidden;
+	background: #e5e5e5;
 }
-.measure > h3 {
-	font: 200 36px/48px Georgia, "Times New Roman", Times, serif;
+.services > h2 {
+	margin: 0 0 36px;
+	font: 900 36px/48px Bitter, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #000;
-	white-space: normal;
-}
-.measure > h4 {
-	padding: 0 24px;
-	font: 200 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #000;
-	white-space: normal;
-}
-
-
-.measure > .image {
-	display: inline-block;
-	width: 320px;
-	padding: 60px 0;
-	vertical-align: middle;
-}
-.measure > .image > .measurements {
-	position: relative;
-	width: 100%;
-}
-.measure > .image > .measurements > img {
-	width: 100%;
-}
-.measure > .image > .measurements > img.size {
-	position: absolute;
-	opacity: 0;
-	-webkit-transition: all .3s ease-out 0s;
-	width: 100%;
-	left: 0;
-	top: -6px;
-}
-.measure > .image > .measurements > img.size.visible {
-	opacity: 1;
-	top: 0px;
-	-webkit-transition: all .75s ease-in 0s;
-}
-.measure > .image > .measurements > p {
-	position: absolute;
-	top: 100%;
-	left: -6px;
-	width: 100%;
-	margin: 0px 0 0 0;
-	padding: 0 24px;
-	white-space: normal;
-	opacity: 0;
-	-webkit-transition: all .3s ease-in 0s;
-	font: 400 12px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #666;
-	letter-spacing: 1px;
-}
-.measure > .image > .measurements > img.visible+p {
-	opacity: 1;
-	left: 0;
-	-webkit-transition: all .5s ease-out 0s;
-}
-
-
-
-
-.measure > form {
-	display: inline-block;
-	width: 96px;
-	vertical-align: middle;
-}
-.measure > form > label {
-	position: relative;
-	display: block;
-	margin: 0 0 18px 0;
-	text-align: left;
-}
-/*.measure > form > label:after {
-	content:'"';
-	font: 900 36px/48px "Lucida Grande", Lucida, Verdana, sans-serif;
-}*/
-.measure > form > label > span {
-	display: block;
-	width: 60px;
-	font: 100 12px/12px Georgia, "Times New Roman", Times, serif;
+	text-transform: uppercase;
 	letter-spacing: 2px;
 }
-.measure > form > label > input {
-	width: 100%;
-	padding: 0 12px;
-	border: 2px solid #000;
-	border-radius: 3px;
-	outline: none;
-	font: 18px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	text-align: left;
-}
-.measure > form > label:after {
-	content: 'In';
-	position: absolute;
-	bottom: 14px;
-	right: 6px;
-	font: 400 12px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	letter-spacing: 2px;
-	color: #ccc;
-	text-transform: uppercase;
-}
-.measure > form > label > input:focus {
-	border-color: #d64336;
-	outline: none;
-}
-.measure > form > .button {
-	margin-top: 24px;
-}
-
-
-
-.measure > .add-to-cart {
-	margin: 48px 0 0 0;
-}
-.measure > .add-to-cart > label {
-	position: relative;
-	display: block;
-	margin: 12px 0;
-}
-.measure > .add-to-cart > label > span {
-	
-}
-.measure > .add-to-cart > label > input {
-	width: 150px;
-	padding: 0 24px;
-	border: 2px solid #000;
-	border-radius: 3px;
-	outline: none;
-	font: 18px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	text-align: center;
-}
-.measure > .add-to-cart > h3 {
-	font: 200 36px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-.measure > .add-to-cart > h3:before {
-	content: '$';
-}
-.measure > .add-to-cart > h3:after {
-	content: '/Shirt';
-	position: relative;
-	/*top: -6px;*/
-	font-size: 18px;
-	font-weight: 100;
-	/*vertical-align: middle;*/
-	/*text-decoration: underline;*/
-}
-/* @end */
-
-
-
-
-
-/* @group Thank You */
-.content section.thank-you {
-	max-width: 960px;
-	align-content: #000;
-	text-align: center;
-}
-.thank-you > h1 {
-	margin: 0 0 48px 0;
-	padding: 0 24px;
-	text-transform: uppercase;
-	font-size: 42px;
-	line-height: 60px;
-	white-space: normal;
-	/*text-align: center;*/
-}
-.thank-you > h2 {
-	padding: 0 24px;
-	font: 400 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-.thank-you > p {
-	/*margin: 0 0 48px 0;*/
-	/*text-align: center;*/
-}
-.thank-you > p > strong {
-	display: block;
-}
-
-.thank-you > ul {
+.services > ul {
+	background: #f16;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0;
 	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: left;
 }
-.thank-you > ul > li {
-	position: relative;
-	left: 24px;
-	border-left: 2px solid #000;
-	padding: 0 24px 48px 0;
-	clear: both;
-	white-space: nowrap;
+.services > ul > li {
+	float: left;
+	width: 20%;
 }
-.thank-you > ul > li:last-of-type {
-	border-left: none;
-}
-
-
-.thank-you > ul > li > section {
+.services > ul > li > img {
 	display: inline-block;
-	width: 40%;
-	padding: 0;
-	vertical-align: top;	
-}
-.thank-you > ul > li > section > img {
 	width: 100%;
+	max-width: 200px;
+	height: 200px;
+	margin: 0 0 24px;
+	border-radius: 200px;
+	border: 3px solid #fff;
+	background: #ccc;
 }
-.thank-you > ul > li > section.order-number {
-	position: relative;
-	width: 30%;
-	margin: 0 0 0 10%;
-	border: 2px dashed #ccc;
-	text-align: center;
-	font: 100 36px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	vertical-align: middle;
+.services > ul > li > h3 {
+	font: 200 18px/24px Bitter, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
-.thank-you > ul > li > section.order-number:before {
-	content: 'Order Number';
-	display: block;
-	width: 100%;
-	position: absolute;
-	left: 0;
-	bottom: 100%;
-	text-align: center;
-	letter-spacing: 2px;
-	font: 900 10px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	text-transform: uppercase;
-}
-
-
-.thank-you > ul > li > section.mailing-address {
-	position: relative;
-	width: 30%;
-	margin: 0 0 0 10%;
-	border: 2px dashed #ccc;
-	padding: 12px 24px;
-	vertical-align: middle;
-}
-.thank-you > ul > li > section.mailing-address:before {
-	content: 'Mailing Address';
-	display: block;
-	width: 100%;
-	position: absolute;
-	left: 0;
-	bottom: 100%;
-	text-align: center;
-	letter-spacing: 2px;
-	font: 900 10px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	text-transform: uppercase;
-}
-.thank-you > ul > li > section.mailing-address > p {
-	font: 500 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	white-space: normal;
-}
-
-
-
-.thank-you > ul > li > hgroup {
-	display: inline-block;
-	width: 60%;
-	white-space: normal;
-	vertical-align: middle;
-}
-.thank-you > ul > li > hgroup > h3 {
-	
-}
-.thank-you > ul > li > hgroup > h3 > span {
-	position: relative;
-	left: -16px;
-	top: -2px;
-	display: inline-block;
-	border: 1px solid #000;
-	background: #000;
-	width: 32px;
-	height: 32px;
-	margin: 0 12px 0 0;
-	text-align: center;
-	border-radius: 36px;
-	color: #fff;
-	font: 200 18px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-.thank-you > ul > li > hgroup > p {
-	padding: 0 0 0  48px;
-}
-
 /* @end */
 
 
@@ -630,14 +356,65 @@ body > header > div > nav > a:hover {
 
 
 
+/* @group Alternating */
+.alternating {
+	padding: 0;
+	padding-bottom: 0!important;
+}
+.alternating > div {
+	position: relative;
+	/*overflow: hidden;*/
+	margin: 96px 0;
+	padding: 96px 0;
+	/*border-bottom: 1px solid #ccc;*/
+}
+.alternating > div:last-of-type {
+	margin-bottom: 0;
+}
+.alternating > div:first-of-type {
+	/*margin: 48px 0;*/
+}
+.alternating > div > img {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	height: 100%;
+	margin: 0 0 0 48px;
+}
+
+.alternating > div > hgroup {
+	padding: 0 50% 0 0;
+}
+.alternating > div > hgroup > h2 {
+	margin: 0 0 48px;
+	font: 200 52px/1.0865em Bitter, Georgia, "Times New Roman", Times, serif;
+}
+
+.alternating > div > hgroup > p {
+	font: 400 18px/1.45em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin: 0 0 36px 0;
+	/*float: left;*/
+	/*width: 60%;*/
+	clear: left;
+}
 
 
-
-
-
-
-
-
+.alternating > div:nth-of-type(even) > hgroup {
+	padding: 0 0 0 50%;
+}
+.alternating > div:nth-of-type(even) > img  {
+	left: auto;
+	right: 50%;
+	margin: 0 48px 0 0;
+}
+.alternating > div:nth-of-type(even) > h2 {
+	float: right;
+}
+.alternating > div:nth-of-type(even) > p {
+	float: right;
+	clear: right;
+}
+/* @end */
 
 
 
@@ -760,6 +537,57 @@ body > header > div > nav > a:hover {
 
 
 
+
+/* @group FAQ */
+.faq {
+	
+}
+.faq > section {
+	max-width: 720px;
+}
+.faq > section > h2 {
+	position: relative;
+	padding: 0 0 0px 48px;
+}
+.faq > section > h2:before {
+	content: 'Q.';
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	/*background: #d64336;*/
+	color: #d64336;
+	margin: 0 12px 0 0;
+	/*padding: 12px;*/
+	vertical-align: middle;
+}
+.faq > section > p {
+	position: relative;
+	/*left: 26px;*/
+	padding: 12px 24px 12px 48px;
+	/*border-left: 5px solid #d64336;*/
+	background: #fff;
+	overflow: hidden;
+}
+/*.faq > section > p:after {
+	content: '\00a0';
+	position: absolute;
+	left: -6px;
+	top: 50%;
+	width: 12px;
+	height: 12px;
+	margin: -6px 0 0 0;
+	-webkit-transform: rotate(45deg);
+	background: #d64336;
+	
+}*/
+
+/* @end */
+
+
+
+
+
+
 /* @group Article */
 article {
 	max-width: 800px;
@@ -786,14 +614,11 @@ article > p+h3  {
 article > blockquote > p {
 	margin: 72px 0;
 	text-align: center;
-	font-size: 36px;
-	font-weight: 100;
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 400;
 	letter-spacing: 1px;
 	color: #b23636;
-}
-article > blockquote > p:before,
-article > blockquote > p:after {
-	content: '"';
 }
 
 article p {
@@ -811,11 +636,11 @@ article > h3+p {
 article > p:first-of-type:first-letter { 
 	float: left; 
 	color: #b23636; 
-	font-size: 120px; 
-	line-height: 96px; 
+	font-size: 96px; 
+	line-height: 60px; 
 	vertical-align: top;
 	padding-top: 12px; 
-	padding-right: 24px; 
+	padding-right: 12px; 
 	padding-left: 3px; 
 	font-family: Georgia; 
 }
@@ -836,8 +661,63 @@ article > ul > li{
 }
 /* @end */
 
+/* @group CTA */
 
-
+.cta {
+	padding: 96px 0;
+	background: #e5e5e5;
+}
+.cta > h2 {
+	text-align: center;
+	color: #b81414;
+	font: 900 36px/48px Bitter, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+}
+.cta > h3 {
+	max-width: 430px;
+	margin: 0 auto 24px auto;
+	text-align: center;
+	font: 200 24px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+}
+.cta > form {
+	max-width: 320px;
+	margin: 0 auto;
+}
+.cta > form {
+	
+}
+.cta > form > p {
+	
+}
+.cta > form > p > br {
+	display: none;
+}
+.cta > form > p > label {
+	display: block;
+	margin: 24px 0 0 0;
+	font: 700 14px/18px Bitter, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+}
+.cta > form > p > input {
+	display: block;
+	width: 100%;
+	height: 48px;
+	border: 2px solid #444;
+	border-radius: 2px;
+	padding: 0 12px;
+	font: 400 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+	outline: none;
+}
+.cta > form > p > input:focus {
+	border: 2px solid #b81414;
+}
+.cta > form > p > button {
+	width: 100%;
+	margin: 12px 0 0 0;
+}
+/* @end */
 
 /* @group FOOTER */
 footer {
@@ -846,7 +726,7 @@ footer {
 	bottom: 0px;
 	left: 0;
 	padding: 48px 24px;
-	background: #000;
+	background: #221e1e;
 	text-align: center;
 	overflow: hidden;
 }
@@ -930,12 +810,6 @@ footer > div > nav > a:hover {
 }
 /* @end */
 
-
-
-.snipcart-checkout-container {
-
-	z-index: 10000000000000000000!important;
-}
 
 
 
