@@ -44,6 +44,3 @@ When you're working around someone's home it requires special care to make sure 
 Masonry is a hard job, and were hard men but we go out of our way to make sure that your happy.
 
 It’s my goal that every homeowner I work with can shake my hand after the job is done and say “pleasure working with you”.
-
-
-{% include quote-form.html %}

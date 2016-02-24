@@ -10,4 +10,20 @@ pageclass: portfolio
 	</hgroup>
 </div>
 
+<ul class="blogposts">
+	{% for post in site.posts %}
+		<li style="background-image: url({{ post.post-image }});">
+			<a href="{{ post.url }}">
+				<!--<div class="postbanner" style="background-image: url({{ post.post-image }});"></div>-->
+				<!--<h3>{{ post.category }}</h3>-->
+				<hgroup>
+					<h2>{{ post.title }}</h2>
+					{{ post.excerpt }}
+				</hgroup>
+			</a>
+		</li>
+	{% endfor %}
+</ul>
+
+
 {% include quote-form.html %}
