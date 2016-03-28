@@ -186,8 +186,9 @@ body > header > div > nav > a.selected {
 	/*max-height: 720px;*/
 	min-height: 320px;
 	/*background: radial-gradient(ellipse farthest-corner, #333 12%, black 100%) #000;*/
-	background: #221e1e;
-	background-position: center;
+	/*background: #221e1e;*/
+	background-image: url('/images/banners/banner1.jpg');
+	background-position: center bottom;
 	background-size: cover;
 	background-attachment: fixed;
 	color: #fff;
@@ -196,10 +197,12 @@ body > header > div > nav > a.selected {
 }
 .content .banner.half {
 	height: 50%;
-	background-image: radial-gradient(ellipse farthest-corner, #333 24%, black 100%) #000;
-	background-attachment:scroll;
-	background-size: contain;
+	/*background-image: radial-gradient(ellipse farthest-corner, #333 24%, black 100%) #000;*/
+	/*background-image: url(/images/banners/banner1.jpg);
+	background-attachment: scroll;
 	background-repeat: no-repeat;
+	background-size: contain;*/
+	
 }
 /*.banner.brick-boundry {
 	background-image: url('/images/patterns/brick.png');
@@ -326,7 +329,7 @@ body > header > div > nav > a.selected {
 	letter-spacing: 2px;
 }
 .services > ul {
-	background: #f16;
+	/*background: #f16;*/
 	max-width: 1080px;
 	margin: 0 auto;
 	padding: 0;
@@ -334,7 +337,7 @@ body > header > div > nav > a.selected {
 }
 .services > ul > li {
 	float: left;
-	width: 20%;
+	width: 25%;
 }
 .services > ul > li > img {
 	display: inline-block;
@@ -359,7 +362,7 @@ body > header > div > nav > a.selected {
 /* @group Alternating */
 .alternating {
 	padding: 0;
-	padding-bottom: 0!important;
+	padding-bottom: 0;
 }
 .alternating > div {
 	position: relative;
@@ -920,6 +923,53 @@ footer > div > nav > a:hover {
 }
 .blogposts > li+li {
 	margin: 0;
+}
+
+.services {
+	background: #ffffff;
+}
+.services > ul {
+	
+}
+.services > ul > li {
+	float: none;
+	display: inline-block;
+	width: 45%;
+}
+.services > ul > li > img {
+	width: 150px;
+	height: 150px;
+}
+
+
+.alternating {
+	padding: 0!important;
+}
+.alternating > div  {
+	margin: 0;
+	padding: 150px 0 0 0;
+	border-top: 1px solid #ccc;
+	background: #e5e5e5;
+}
+.alternating > div > img,
+.alternating > div:nth-of-type(even) > img {	
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+.alternating > div > hgroup,
+.alternating > div:nth-of-type(even) > hgroup {
+	position: relative;
+	display: block;
+	padding: 24px;
+	background: #fff;
+}
+ {
+	
 }
 }
 
