@@ -16,5 +16,4 @@ Gallery:
   - Image_Path: /images/projects/sun-river-phase-49/10.jpg
 ---
 
-
-<!--Block walls and wrought iron we did for Sun River, Phase 49.-->
+Block walls and wrought iron we did for Sun River, Phase 49.
