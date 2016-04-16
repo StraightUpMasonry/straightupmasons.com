@@ -510,11 +510,12 @@ body > header > div > nav > a.selected {
 .blogposts > li > a {
 	display: block;
 	padding: 48% 0 0 0;
+	text-decoration: none;
 }
 .blogposts > li > a > hgroup {
 	display: block;
-	padding: 12px;
-	border-top: 3px solid #b81515;
+	padding: 18px;
+	/*border-top: 3px solid #b81515;*/
 	text-decoration: none;
 	background: rgba(0,0,0,.65);
 }
@@ -527,7 +528,7 @@ body > header > div > nav > a.selected {
 	background-repeat: no-repeat;
 }
 .blogposts > li > a > hgroup > h2 {
-	margin: 0 0 0px 0;
+	margin: 0 0 12px 0;
 	font: 900 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #b81515;
 	color: #b81515;
