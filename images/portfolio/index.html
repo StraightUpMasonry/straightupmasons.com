@@ -1,21 +1,21 @@
 ---
 layout: default
-title: Frequently Asked Questions
-description: All the answers to all the questions
+title: Portfolio
+description: "Check out the cool projects we've worked on recently."
 pageclass: portfolio
 ---
 <div class="banner half" style="background-image: url(/images/banners/banner4.jpg); background-attachment:scroll; background-position: center;">
-	<hgroup class="">
+	<hgroup>
 		<h1 class="editable">Portfolio</h1>
 	</hgroup>
 </div>
 
 <ul class="blogposts">
 	{% for post in site.posts %}
-		<li style="background-image: url({{ post.post-image }});">
+		<li style="background-image: url({{ post.banner_image_path }});">
 			<a href="{{ post.url }}">
-				<!--<div class="postbanner" style="background-image: url({{ post.post-image }});"></div>-->
-				<!--<h3>{{ post.category }}</h3>-->
+				<!--<div class="postbanner" style="background-image: url({{ post.post-image }});">-->
+				<!--<h3>{{ post.category }}-->
 				<hgroup>
 					<h2>{{ post.title }}</h2>
 					{{ post.excerpt }}
