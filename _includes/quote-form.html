@@ -2,26 +2,26 @@
 	<h2>Request A Free Quote</h2>
 	<h3>We'll get back to you within 24 hours to set up a time to meet.</h3>
 	
-	<form action="http://lebaron.createsend.com/t/t/s/njlxi/" method="post" id="subForm">
+	<form action="/thank-you" method="post" id="subForm">
 	    <p>
 	        <label for="fieldName">Name</label><br />
-	        <input id="fieldName" name="cm-name" type="text" />
+	        <input id="fieldName" name="Name" type="text" />
 	    </p>
 	    <p>
 	        <label for="fieldEmail">Email</label><br />
-	        <input id="fieldEmail" name="cm-njlxi-njlxi" type="email" required />
+	        <input id="fieldEmail" name="_replyto" type="email" required />
 	    </p>
 	    <p>
 	        <label for="fieldblrhjh">Phone Number</label><br />
-	        <input id="fieldblrhjh" name="cm-f-blrhjh" type="text" />
+	        <input id="fieldblrhjh" name="Phone" type="text" />
 	    </p>
 	    <p>
 	        <label for="fieldblrhjk">Address</label><br />
-	        <input id="fieldblrhjk" name="cm-f-blrhjk" type="text" />
+	        <input id="fieldblrhjk" name="Addresss" type="text" />
 	    </p>
 	    <p>
 	        <label for="fieldblrhju">State</label><br />
-	        <select id="fieldblrhju" name="cm-fo-blrhju">
+	        <select id="fieldblrhju" name="State">
 	            <option value=""></option>
 	            <option value="1494484">Alabama</option>
 	            <option value="1494485">Alaska</option>
@@ -78,10 +78,39 @@
 	    </p>
 	    <p>
 	        <label for="fieldblrhtl">Zip Code</label><br />
-	        <input id="fieldblrhtl" name="cm-f-blrhtl" type="text" />
+	        <input id="fieldblrhtl" name="Zip Code" type="text" />
 	    </p>
+	    <p>
+	        <label for="fieldxsjyk">Description</label><br />
+	        <textarea id="fieldxsjyk" name="Description" type="text" class="large"></textarea>
+	    </p>
+	    
+	    <input type="hidden" name="_to" value="kevaleb@gmail.com"/>
+	    <input type="hidden" name="_subject" value="Quote Request"/>
+	    <input type="text" name="_gotcha" style="display: none;">
 	    <p>
 	        <button type="submit" class="button">Subscribe</button>
 	    </p>
 	</form>
 </div>
+
+
+
+
+<!--<form action="http://lebaron.createsend.com/t/t/s/njlxi/" method="post" id="subForm">
+    <p>
+        <label for="fieldName">Name</label><br />
+        <input id="fieldName" name="cm-name" type="text" />
+    </p>
+    <p>
+        <label for="fieldEmail">Email</label><br />
+        <input id="fieldEmail" name="cm-njlxi-njlxi" type="email" required />
+    </p>
+    <p>
+        <label for="fieldxsjyk">Description</label><br />
+        <input id="fieldxsjyk" name="cm-f-xsjyk" type="text" />
+    </p>
+    <p>
+        <button type="submit">Subscribe</button>
+    </p>
+</form>-->

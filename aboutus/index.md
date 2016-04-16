@@ -1,10 +1,15 @@
 ---
-layout: article
+layout: default
 title: About Us
 description: We like shirts that fit
 pageclass: about
 ---
-
+<div class="banner half" style="background-image: url(/images/banners/banner5.jpg); background-attachment:scroll; background-position: center;">
+	<hgroup>
+		<h1 class="editable">About Us</h1>
+	</hgroup>
+</div>
+<article class="about-us">
 
 My name is Leo Fehrenbacker. I’m founder of Straight Up Masonry and I’ve been a mason for over 20 years.
 
@@ -47,3 +52,4 @@ When you're working around someone's home it requires special care to make sure 
 Masonry is a hard job, and we're hard men but we go out of our way to make sure that your happy.
 
 It’s my goal that every homeowner I work with can shake my hand after the job is done and say “pleasure working with you”.
+</article>
