@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sun River Phase 49
-post-image: /portfolio/sun-river-phase-49/5.jpg
+banner_image_path: /portfolio/sun-river-phase-49/5.jpg
 Gallery:
   - Image_Path: /portfolio/sun-river-phase-49/5.jpg
   - Image_Path: /portfolio/sun-river-phase-49/2.jpg
