@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Ussssss
+title: About Us
 description: We like shirts that fit
 pageclass: about
 ---
