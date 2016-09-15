@@ -259,12 +259,12 @@ body > header > div > nav > a.selected {
 	text-align: center;
 }
 .banner > hgroup > img {
-	max-width: 120px;
+	max-width: 240px;
 	margin: 0 auto 24px auto;
 }
 .banner > hgroup > h1 {
 	margin: 0px 0 0 0;
-	font: 100 36px/60px Bitter, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 100 36px/48px Bitter, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: 3px;
 	/*text-shadow: 0 1px 6px rgba(0,0,0,.5);*/
 	text-transform: uppercase;
