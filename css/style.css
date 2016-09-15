@@ -831,7 +831,7 @@ footer > div > a {
 }
 footer > div > a > img {
 	width: 100%;
-	max-width: 72px;
+	max-width: 150px;
 }
 footer > div > a > span {
 	display: block;
